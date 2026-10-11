@@ -1,0 +1,445 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="Cursos de robótica educativa de Carmen Guzmán de Mier 1"><title>Robótica educativa | Carmen Guzmán de Mier 1</title>
+<style>
+:root{--vino:#8b0345;--vino2:#4a0024;--rosa:#d4659a;--bg:#0d0d0d;--panel:#171317;--txt:#f1edf0;--muted:#b8afb3;--line:#5f1539}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--txt);font:16px/1.6 Inter,"Segoe UI",Arial,sans-serif}a,button{color:inherit}button{font:inherit}.top{position:sticky;top:0;z-index:30;min-height:84px;padding:12px 5%;display:flex;align-items:center;justify-content:space-between;gap:24px;background:#0d0d0df2;border-bottom:1px solid #343034;backdrop-filter:blur(14px)}.brand{display:flex;align-items:center;gap:12px;border:0;background:none;cursor:pointer;text-align:left;font-weight:900}.brand img{width:56px;height:56px;border-radius:14px;object-fit:cover}.brand small{display:block;color:#aaa;font-size:10px;letter-spacing:2px}.main-nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:4px}.nav-btn,.back,.project-nav button{border:0;cursor:pointer;border-radius:9px;background:transparent;font-weight:800}.nav-btn{padding:9px 12px;color:#aaa}.nav-btn:hover,.nav-btn.active{color:white;background:var(--vino2)}.screen{display:none;min-height:calc(100vh - 145px);padding:72px 6%;animation:in .3s ease}.screen.active{display:block}.hero.screen.active{display:grid}@keyframes in{from{opacity:0;transform:translateY(8px)}}.hero{grid-template-columns:.8fr 1.2fr;align-items:center;gap:7%;background:radial-gradient(circle at 15% 45%,#8b03455c,transparent 35%)}.hero-logo{width:min(410px,80vw);margin:auto;border-radius:28%;filter:drop-shadow(0 25px 42px #000)}.eyebrow{color:var(--rosa);font-size:12px;font-weight:900;letter-spacing:3px}.hero h1,.page-title{font-size:clamp(42px,6vw,80px);line-height:1;letter-spacing:-3px;margin:12px 0 22px}.hero h1 span{display:block;color:#ae185e}.lead{max-width:760px;color:var(--muted);font-size:18px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}.cta,.back{padding:13px 20px;border:1px solid var(--vino);background:var(--vino);border-radius:11px;font-weight:900;cursor:pointer}.cta.secondary,.back{background:#1b1b1b;border-color:#484348}.section-head{max-width:850px;margin-bottom:42px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}.grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.card{padding:28px;border:1px solid var(--line);border-radius:20px;background:linear-gradient(145deg,#39001b,#18000e);box-shadow:0 18px 35px #0004}.card h2,.card h3{line-height:1.2}.card p,.muted{color:var(--muted)}.project-card{display:flex;flex-direction:column}.project-card .cta{margin-top:auto;align-self:flex-start}.num{display:grid;place-items:center;width:43px;height:43px;border-radius:11px;background:#171717;color:var(--rosa);font-weight:900}.chips{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0}.chips span{padding:6px 10px;border-radius:8px;background:#260012;color:#d7cbd1;border:1px solid #531334;font-size:13px}.materials{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:15px}.material{padding:16px;border:1px solid var(--line);border-radius:15px;background:#1b1116}.material img{width:100%;height:145px;object-fit:contain;padding:8px;background:#eee;border-radius:10px}.material h3{font-size:16px;margin:10px 0 0}.material small{color:var(--rosa);font-weight:800}.project{padding-top:34px}.project-cover{padding:45px;border:1px solid var(--line);border-radius:25px;background:radial-gradient(circle at 85% 15%,#8b034566,transparent 35%),linear-gradient(135deg,#2b0015,#111);margin-bottom:25px}.project-cover .back{margin-bottom:30px}.project-nav{position:sticky;top:84px;z-index:20;display:flex;gap:7px;overflow-x:auto;padding:10px;background:#100d0ff2;border:1px solid #3b3035;border-radius:13px}.project-nav button{white-space:nowrap;padding:8px 11px;color:#bbb;background:#210010}.project-nav button:hover{background:var(--vino);color:white}.module{max-width:1180px;margin:60px auto;scroll-margin-top:155px}.module-title{font-size:clamp(28px,4vw,44px);line-height:1.15;margin:6px 0 20px}.steps{counter-reset:n;list-style:none;padding:0;display:grid;gap:10px}.steps li{counter-increment:n;position:relative;padding:14px 14px 14px 55px;border:1px solid #4c1530;border-radius:11px;background:#210010;color:#d1c9cd}.steps li:before{content:counter(n);position:absolute;left:14px;width:27px;height:27px;display:grid;place-items:center;background:var(--vino);border-radius:7px;font-weight:900}.table-wrap{overflow-x:auto}.wiring{width:100%;border-collapse:collapse;background:#151515}.wiring th,.wiring td{padding:13px 15px;text-align:left;border-bottom:1px solid #3b2430}.wiring th{background:#320018}.wiring td{color:#c4bcc0}pre{overflow:auto;padding:20px;border:1px solid #493540;border-radius:13px;background:#080808;color:#efb4d1;tab-size:2}code{font:13px/1.55 Consolas,monospace}.video-box{aspect-ratio:16/9;background:#050505;border:1px dashed #854468;border-radius:17px;overflow:hidden}.video-box video{width:100%;height:100%}.note{padding:13px 16px;background:#1d1117;border-left:3px solid var(--rosa);color:#bbb}.faq{display:grid;gap:10px}.faq details{padding:15px 18px;background:#171417;border:1px solid #40363b;border-radius:11px}.faq summary{cursor:pointer;font-weight:900}.faq p{color:#bbb}.resource{display:flex;gap:15px;align-items:flex-start}.icon{font-size:30px}footer{padding:25px 5%;display:flex;justify-content:space-between;flex-wrap:wrap;color:#777;border-top:1px solid #292929}@media(max-width:980px){.top{align-items:flex-start;flex-direction:column}.main-nav{justify-content:flex-start}.project-nav{top:151px}.hero{grid-template-columns:1fr;text-align:center}.grid.three,.materials{grid-template-columns:repeat(2,1fr)}}@media(max-width:580px){.screen{padding:48px 20px}.top{padding:10px 16px}.brand span{font-size:13px}.brand img{width:45px;height:45px}.nav-btn{font-size:12px;padding:7px}.grid,.grid.three,.materials{grid-template-columns:1fr}.hero h1,.page-title{letter-spacing:-2px}.project{padding:24px 14px}.project-cover{padding:28px 20px}.project-nav{top:142px}.module{margin:42px 6px}.card{padding:22px}}
+/* Tema claro */
+:root{--bg:#fff;--txt:#1d1419;--muted:#51464c;--rosa:#9b0c50}.top{background:#fffffff2;border-bottom-color:#d7cbd1}.brand{color:#1d1419}.brand small{color:#554a50}.nav-btn{color:#4b4146}.nav-btn:hover,.nav-btn.active{color:#fff}.screen{background:#fff}.hero{background:radial-gradient(circle at 15% 45%,#8b034526,transparent 38%),#fff}.hero p,.section-head p,.card p,.lead,.muted{color:#51464c}.eyebrow{color:#8b0345}.cta{color:#fff}.card{color:#21171c;background:linear-gradient(145deg,#fff7fb,#f5e8ee);box-shadow:0 16px 34px #4a002414}.num{color:#8b0345;background:#edd4e0}.chips span{background:#f5dce8;color:#5b0b31;border-color:#b4668c}.material{color:#21171c;background:#fff8fb}.material small{color:#8b0345}.project-cover{color:#21171c;background:radial-gradient(circle at 85% 15%,#8b03452b,transparent 38%),linear-gradient(135deg,#fff7fb,#fff);box-shadow:0 15px 35px #4a002412}.cta.secondary,.back{background:#fff;color:#6f083a;border-color:#8b0345}.module{color:#21171c}.steps li{background:#fff7fb;color:#40353b}.steps li:before{color:#fff}.wiring{background:#fff}.wiring th{color:#fff;background:#5f1539}.wiring td{color:#3f353a;border-bottom-color:#d9cbd2}.note{background:#fff0f7;color:#493e44}.faq details{color:#21171c;background:#fff;border-color:#cfc0c7}.faq summary{color:#2d2027}.faq p{color:#493e44}pre{background:#fff;color:#281b22;border-color:#b892a5;box-shadow:0 10px 28px #4a002410}pre code{color:#281b22}footer{background:#fff;color:#554a50;border-top-color:#d9cfd4}
+.project-card.evasor-card{background-image:linear-gradient(rgba(255,255,255,.38),rgba(255,247,251,.55)),url('im2.jpg');background-size:cover;background-position:center}.project-card.seguidor-card{background-image:linear-gradient(rgba(255,255,255,.38),rgba(255,247,251,.55)),url('im1.jpg');background-size:cover;background-position:center}.project-card.evasor-card h2,.project-card.seguidor-card h2,.project-card.evasor-card p,.project-card.seguidor-card p{text-shadow:0 1px 3px #fff,0 1px 8px #fff}
+/* Portada institucional inspirada en la referencia */
+.hero{
+  position:relative;
+  isolation:isolate;
+  min-height:calc(100vh - 84px);
+  grid-template-columns:34% 66%;
+  gap:0;
+  overflow:hidden;
+  padding:clamp(36px,4vw,64px) 4.5%;
+  background:
+    radial-gradient(ellipse 32% 52% at 13% 42%,#ec405555 0%,#ec405500 100%),
+    radial-gradient(ellipse 56% 95% at -8% 95%,#570019 0%,#57001900 100%),
+    linear-gradient(112deg,#800025 0%,#b8103a 23%,#cf657c 35%,#edcbd3 46%,#fcf2f0 59%,#fffdf9 100%);
+}
+.hero:before{
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  opacity:.5;
+  background:
+    radial-gradient(ellipse 42% 28% at 62% 0%,#ffffffb3,transparent 100%),
+    linear-gradient(155deg,transparent 55%,#c6a56d14 100%);
+}
+.hero:after{
+  content:"";
+  position:absolute;
+  z-index:-1;
+  pointer-events:none;
+  width:52vw;
+  height:70vw;
+  left:-23vw;
+  top:50%;
+  transform:translateY(-50%) rotate(-18deg);
+  border-radius:50%;
+  border:1px solid #e6c79130;
+  background:transparent;
+  box-shadow:0 0 0 32px #e6c79106,0 0 0 64px #e6c79104;
+}
+.hero-logo{
+  width:min(430px,29vw);
+  margin:auto;
+  border-radius:0;
+  mix-blend-mode:screen;
+  filter:drop-shadow(0 18px 14px #25000a75);
+  transform:translate(-2%,1%);
+}
+.hero>div{width:100%;max-width:none;text-align:center;padding:5px 0 0 3%}
+.hero .eyebrow{
+  display:inline-block;
+  color:#781438;
+  font:700 13px/1.3 Georgia,"Times New Roman",serif;
+  letter-spacing:5px;
+  text-transform:uppercase;
+}
+.hero h1{
+  color:#b67b18;
+  background:linear-gradient(180deg,#fff0a9 0%,#d59b2b 32%,#9a5a09 58%,#e2b64f 78%,#8b4d05 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  margin:0 auto;
+  max-width:920px;
+  font-family:Georgia,"Times New Roman",serif;
+  font-size:clamp(48px,5vw,78px);
+  font-weight:400;
+  line-height:1.22;
+  letter-spacing:.12em;
+  text-transform:uppercase;
+  filter:drop-shadow(1px 2px 1px #4b250075);
+}
+.hero .cover-motto{
+  position:relative;
+  margin:61px auto 0;
+  max-width:720px;
+  color:#781233;
+  font:600 clamp(15px,1.45vw,22px)/1.65 Georgia,"Times New Roman",serif;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+}
+.hero .cover-motto:before{
+  content:"✦";
+  position:absolute;
+  left:50%;
+  top:-39px;
+  width:460px;
+  transform:translateX(-50%);
+  color:#8b0345;
+  font-size:17px;
+  line-height:16px;
+  background:linear-gradient(#8b0345,#8b0345) left center/45% 2px no-repeat,linear-gradient(#8b0345,#8b0345) right center/45% 2px no-repeat;
+}
+.cover-presented{margin:56px 0 0;color:#171217;font-size:clamp(10px,1vw,14px);font-weight:800;letter-spacing:.25em;text-transform:uppercase}
+.cover-students{margin:8px 0 0;color:#171217;font:600 clamp(17px,1.65vw,25px)/1.45 Georgia,"Times New Roman",serif;letter-spacing:.22em;text-transform:uppercase}
+.cover-students span{display:block}
+.cover-actions{justify-content:center;margin-top:32px}
+.cover-actions .cta{background:#b8103a;border-color:#b8103a;box-shadow:0 8px 22px #80002526;transition:background .2s ease,box-shadow .2s ease}
+.cover-actions .cta:hover{background:#800025;border-color:#800025;box-shadow:0 10px 26px #80002538}
+.cover-actions .cta:focus-visible{outline:3px solid #800025;outline-offset:4px}
+@media(max-width:980px){
+  .hero{min-height:calc(100vh - 151px);grid-template-columns:1fr;gap:25px;background:radial-gradient(ellipse 65% 28% at 50% 12%,#ec405566,transparent 100%),linear-gradient(172deg,#800025 0%,#b8103a 20%,#cf657c 31%,#edcbd3 41%,#fcf2f0 51%,#fffdf9 100%)}
+  .hero:after{width:110vw;height:85vw;left:-5vw;top:-40vw;transform:rotate(-18deg)}
+  .hero-logo{width:min(270px,55vw);transform:none}
+  .hero>div{padding-left:0}
+  .hero h1{font-size:clamp(36px,7vw,62px)}
+}
+@media(max-width:580px){
+  .hero{padding:45px 20px 55px;gap:20px}
+  .hero-logo{width:min(220px,60vw)}
+  .hero h1{margin-top:16px;font-size:clamp(32px,9vw,48px);letter-spacing:.04em}
+  .hero .eyebrow{font-size:11px;letter-spacing:3px}
+  .hero .cover-motto{font-size:14px;letter-spacing:2px}
+  .cover-presented{margin-top:45px;font-size:10px;letter-spacing:2px}
+  .cover-students{font-size:16px;letter-spacing:2px}
+}
+/* Fondo guindo compartido por toda la página */
+:root{
+  --fondo-guindo:
+    radial-gradient(ellipse 32% 52% at 13% 42%,#ec405555 0%,#ec405500 100%),
+    radial-gradient(ellipse 56% 95% at -8% 95%,#570019 0%,#57001900 100%),
+    linear-gradient(112deg,#800025 0%,#b8103a 23%,#cf657c 35%,#edcbd3 46%,#fcf2f0 59%,#fffdf9 100%);
+}
+body{position:relative;isolation:isolate;background:#fffdf9}
+body:before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  background:var(--fondo-guindo);
+}
+.screen{background:transparent}
+.hero{background:var(--fondo-guindo)}
+.screen:not(.hero){animation:screen-fade .3s ease}
+@keyframes screen-fade{from{opacity:0}to{opacity:1}}
+.project .module{background:#fffdf9}
+.top,footer{background:linear-gradient(90deg,#fff0f3ed,#fffdf9f2)}
+.screen:not(.hero) .section-head,.module{
+  padding:24px;
+  border:1px solid #ffffff80;
+  border-radius:20px;
+  background:#fffdf9f2;
+  box-shadow:0 16px 34px #57001912;
+}
+@media(max-width:980px){
+  :root{--fondo-guindo:radial-gradient(ellipse 65% 28% at 50% 12%,#ec405566,transparent 100%),linear-gradient(172deg,#800025 0%,#b8103a 20%,#cf657c 31%,#edcbd3 41%,#fcf2f0 51%,#fffdf9 100%)}
+}
+@media(max-width:580px){
+  .screen:not(.hero) .section-head,.module{padding:20px 16px}
+}
+</style></head><body>
+<header class="top"><button class="brand" data-screen="inicio"><img src="CGM.png" alt="Logo de Carmen Guzmán de Mier 1"><span>Carmen Guzmán de Mier 1<small>ROBÓTICA EDUCATIVA</small></span></button><nav class="main-nav" aria-label="Menú principal"><button class="nav-btn" data-screen="inicio">Inicio</button><button class="nav-btn" data-screen="proyectos">Proyectos</button><button class="nav-btn" data-screen="recursos">Recursos</button><button class="nav-btn" data-screen="acerca">Acerca de nosotros</button></nav></header>
+<main>
+<section class="screen hero" id="inicio"><img class="hero-logo" src="CGM.png" alt="Logo de Carmen Guzmán de Mier 1"><div><h1>Carmen Guzmán<br>de Mier</h1><p class="cover-motto">Aprende Robótica Básica con Nosotros</p><p class="cover-presented">Presentado por los estudiantes</p><p class="cover-students"><span>Alex Daniel Taco Catari</span><span>Gladys Zambrana Flores</span></p><div class="actions cover-actions"><button class="cta" data-screen="proyectos">Iniciar curso →</button></div></div></section>
+<section class="screen" id="proyectos"><div class="section-head"><span class="eyebrow">ELIGE TU DESAFÍO</span><h1 class="page-title">Proyectos de robótica.</h1><p class="lead">Cada proyecto abre su propio curso completo dentro de este mismo archivo.</p></div><div class="grid"><article class="card project-card evasor-card"><span class="num">01</span><h2>Robot evasor de obstáculos</h2><p>Vehículo autónomo que mide distancias, detecta objetos y cambia de dirección para evitar choques.</p><div class="chips"><span>HC-SR04</span><span>Servomotor</span><span>L298</span></div><button class="cta" data-screen="evasor">Entrar al proyecto →</button></article><article class="card project-card seguidor-card"><span class="num">02</span><h2>Robot seguidor de línea</h2><p>Robot que interpreta una trayectoria oscura con sensores infrarrojos y corrige su recorrido.</p><div class="chips"><span>TCRT5000</span><span>PWM</span><span>L298</span></div><button class="cta" data-screen="seguidor">Entrar al proyecto →</button></article></div></section>
+<section class="screen" id="recursos"><div class="section-head"><span class="eyebrow">MATERIAL DE APOYO</span><h1 class="page-title">Recursos.</h1></div><div class="grid"><article class="card resource"><span class="icon">⌁</span><div><h2>Arduino IDE</h2><p>Utiliza el editor de Arduino para cargar los programas incluidos en cada curso.</p></div></article><article class="card resource"><span class="icon">⚡</span><div><h2>Seguridad eléctrica</h2><p>Trabaja siempre con la batería desconectada mientras realizas o corriges conexiones.</p></div></article><article class="card resource"><span class="icon">✓</span><div><h2>Lista de comprobación</h2><p>Revisa polaridad, tierra común, voltajes y libertad de movimiento antes de encender.</p></div></article><article class="card resource"><span class="icon">▶</span><div><h2>Videos</h2><p>Los espacios de video están dentro de cada proyecto y listos para tus archivos MP4.</p></div></article></div></section>
+<section class="screen" id="acerca"><div class="section-head"><span class="eyebrow">NUESTRA COMUNIDAD</span><h1 class="page-title">Acerca de nosotros.</h1><p class="lead">Acercamos la tecnología a los estudiantes mediante experiencias prácticas, creativas y accesibles. Preguntamos, construimos, probamos y mejoramos: el error es parte natural del descubrimiento.</p></div><div class="grid"><article class="card"><h2>Misión</h2><p>Transformar la curiosidad en soluciones mediante robótica educativa.</p></article><article class="card"><h2>Metodología</h2><p>Aprendizaje activo, colaboración, investigación y mejora continua.</p></article></div></section>
+
+<section class="screen project" id="evasor"><div class="project-cover"><button class="back" data-screen="proyectos">← Volver a Proyectos</button><span class="eyebrow">PROYECTO 01 · NIVEL INICIAL</span><h1 class="page-title">Robot evasor de obstáculos</h1><p class="lead">Construye un vehículo que observa el entorno con ultrasonido y toma decisiones automáticas para evitar colisiones.</p></div>
+<article class="module" id="ev-intro"><span class="eyebrow">INTRODUCCIÓN</span><h2 class="module-title">¿Qué aprenderás y cómo funciona?</h2><div class="grid"><div class="card"><h3>Aprendizaje</h3><p>Medir distancias, controlar motores, utilizar condiciones y coordinar sensor, servo y movimiento.</p></div><div class="card"><h3>Funcionamiento</h3><p>El HC-SR04 envía un pulso, escucha el eco y calcula la distancia. Si hay un objeto cerca, el robot se detiene, observa los lados y gira hacia el camino libre.</p></div></div></article>
+<article class="module" id="ev-materiales"><span class="eyebrow">MATERIALES</span><h2 class="module-title">Componentes necesarios</h2><div class="materials" id="materiales-evasor"></div></article>
+<article class="module" id="ev-ensamble"><span class="eyebrow">ENSAMBLAJE</span><h2 class="module-title">Construcción paso a paso</h2><ol class="steps"><li>Fija los dos motores y las ruedas al chasis.</li><li>Instala la rueda loca y verifica el equilibrio.</li><li>Sujeta Arduino, el controlador y la batería.</li><li>Monta el HC-SR04 sobre el servomotor al frente.</li><li>Conecta con la batería apagada y ordena los cables.</li><li>Comprueba que ninguna pieza bloquee las ruedas.</li></ol></article>
+<article class="module" id="ev-conexiones"><span class="eyebrow">CONEXIONES</span><h2 class="module-title">Plan eléctrico</h2><div class="table-wrap"><table class="wiring"><tr><th>Componente</th><th>Terminal</th><th>Arduino / controlador</th></tr><tr><td>HC-SR04</td><td>TRIG / ECHO</td><td>D2 / D3</td></tr><tr><td>Servomotor</td><td>Señal</td><td>D9</td></tr><tr><td>Motor izquierdo</td><td>Control 1 / 2</td><td>D4 / D5</td></tr><tr><td>Motor derecho</td><td>Control 1 / 2</td><td>D6 / D7</td></tr><tr><td>Todos</td><td>GND</td><td>Tierra común</td></tr></table></div><p class="note">Confirma el voltaje y la distribución de pines de tu módulo antes de alimentar el circuito.</p></article>
+<article class="module" id="ev-programacion"><span class="eyebrow">PROGRAMACIÓN</span><h2 class="module-title">Código Arduino completo</h2><pre><code>#include &lt;Servo.h&gt;
+
+// ROBOT EVASOR DE OBSTÁCULOS - ARDUINO NANO
+// HC-SR04: TRIG D2, ECHO D3
+// Motor izquierdo: D4 y D5
+// Motor derecho: D6 y D7
+// Servo: señal D9
+
+const byte TRIG = 2;
+const byte ECHO = 3;
+const byte MOTOR_IZQ_1 = 4;
+const byte MOTOR_IZQ_2 = 5;
+const byte MOTOR_DER_1 = 6;
+const byte MOTOR_DER_2 = 7;
+const byte PIN_SERVO = 9;
+
+const int DISTANCIA_SEGURA = 30;
+const int CENTRO = 90;
+const int IZQUIERDA = 160;
+const int DERECHA = 20;
+
+Servo cabeza;
+
+void setup() {
+  pinMode(TRIG, OUTPUT);
+  pinMode(ECHO, INPUT);
+  pinMode(MOTOR_IZQ_1, OUTPUT);
+  pinMode(MOTOR_IZQ_2, OUTPUT);
+  pinMode(MOTOR_DER_1, OUTPUT);
+  pinMode(MOTOR_DER_2, OUTPUT);
+  cabeza.attach(PIN_SERVO);
+  cabeza.write(CENTRO);
+  detener();
+  delay(1000);
+}
+
+void loop() {
+  cabeza.write(CENTRO);
+  int distanciaFrente = medirDistancia();
+
+  if (distanciaFrente &gt; DISTANCIA_SEGURA) {
+    adelante();
+  } else {
+    detener();
+    delay(250);
+    atras();
+    delay(350);
+    detener();
+    delay(200);
+
+    cabeza.write(IZQUIERDA);
+    delay(500);
+    int distanciaIzquierda = medirDistancia();
+
+    cabeza.write(DERECHA);
+    delay(500);
+    int distanciaDerecha = medirDistancia();
+
+    cabeza.write(CENTRO);
+    delay(300);
+
+    if (distanciaIzquierda &gt; distanciaDerecha) {
+      girarIzquierda();
+      delay(500);
+    } else if (distanciaDerecha &gt; distanciaIzquierda) {
+      girarDerecha();
+      delay(500);
+    } else {
+      girarDerecha();
+      delay(600);
+    }
+
+    detener();
+    delay(150);
+    cabeza.write(CENTRO);
+  }
+}
+
+int medirDistancia() {
+  long suma = 0;
+  int medicionesValidas = 0;
+
+  for (int i = 0; i &lt; 3; i++) {
+    digitalWrite(TRIG, LOW);
+    delayMicroseconds(3);
+    digitalWrite(TRIG, HIGH);
+    delayMicroseconds(10);
+    digitalWrite(TRIG, LOW);
+
+    long duracion = pulseIn(ECHO, HIGH, 25000);
+    if (duracion &gt; 0) {
+      int distancia = duracion * 0.0343 / 2;
+      if (distancia &gt; 2 &amp;&amp; distancia &lt; 400) {
+        suma += distancia;
+        medicionesValidas++;
+      }
+    }
+    delay(20);
+  }
+
+  if (medicionesValidas == 0) return 400;
+  return suma / medicionesValidas;
+}
+
+void adelante() {
+  digitalWrite(MOTOR_IZQ_1, HIGH);
+  digitalWrite(MOTOR_IZQ_2, LOW);
+  digitalWrite(MOTOR_DER_1, HIGH);
+  digitalWrite(MOTOR_DER_2, LOW);
+}
+
+void atras() {
+  digitalWrite(MOTOR_IZQ_1, LOW);
+  digitalWrite(MOTOR_IZQ_2, HIGH);
+  digitalWrite(MOTOR_DER_1, LOW);
+  digitalWrite(MOTOR_DER_2, HIGH);
+}
+
+void girarIzquierda() {
+  digitalWrite(MOTOR_IZQ_1, LOW);
+  digitalWrite(MOTOR_IZQ_2, HIGH);
+  digitalWrite(MOTOR_DER_1, HIGH);
+  digitalWrite(MOTOR_DER_2, LOW);
+}
+
+void girarDerecha() {
+  digitalWrite(MOTOR_IZQ_1, HIGH);
+  digitalWrite(MOTOR_IZQ_2, LOW);
+  digitalWrite(MOTOR_DER_1, LOW);
+  digitalWrite(MOTOR_DER_2, HIGH);
+}
+
+void detener() {
+  digitalWrite(MOTOR_IZQ_1, LOW);
+  digitalWrite(MOTOR_IZQ_2, LOW);
+  digitalWrite(MOTOR_DER_1, LOW);
+  digitalWrite(MOTOR_DER_2, LOW);
+}</code></pre></article>
+<article class="module" id="ev-videos"><span class="eyebrow">VIDEOS</span><h2 class="module-title">Curso en video</h2>
+  <div class="video-box">
+    <iframe width="560" height="315"src="https://www.youtube.com/embed/OC2lvEPZEXA?si=EWwM057yRogQV7bJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <p class="note">Agrega tu archivo con la ruta: <code>videos/v1.mp4</code></p></article>
+<article class="module" id="ev-prueba"><span class="eyebrow">PRUEBA FINAL</span><h2 class="module-title">Evaluación y errores frecuentes</h2><ol class="steps"><li>Prueba primero los motores con el robot elevado.</li><li>Verifica la distancia en el monitor serial.</li><li>Coloca obstáculos y ajusta el límite de 20 cm.</li><li>Completa un recorrido sin colisiones.</li></ol><div class="faq"><details><summary>El sensor siempre marca cero</summary><p>Revisa VCC, GND, TRIG, ECHO y los números de pin del programa.</p></details><details><summary>Un motor gira al revés</summary><p>Intercambia sus dos cables o invierte la lógica de esa salida.</p></details><details><summary>Arduino se reinicia al mover los motores</summary><p>Revisa la alimentación, la batería y la tierra común; los motores no deben alimentarse desde un pin del Arduino.</p></details></div></article></section>
+
+<section class="screen project" id="seguidor"><div class="project-cover"><button class="back" data-screen="proyectos">← Volver a Proyectos</button><span class="eyebrow">PROYECTO 02 · NIVEL INTERMEDIO</span><h1 class="page-title">Robot seguidor de línea</h1><p class="lead">Construye un robot que reconoce una pista y corrige continuamente su dirección.</p></div>
+<article class="module" id="sg-intro"><span class="eyebrow">INTRODUCCIÓN</span><h2 class="module-title">¿Qué aprenderás y cómo funciona?</h2><div class="grid"><div class="card"><h3>Aprendizaje</h3><p>Interpretar sensores infrarrojos, calibrar claro y oscuro, controlar velocidad PWM y aplicar lógica de corrección.</p></div><div class="card"><h3>Funcionamiento</h3><p>Los TCRT5000 miden la luz reflejada por el suelo. Arduino compara sus lecturas y acelera o frena cada motor para mantener el robot sobre la línea.</p></div></div></article>
+<article class="module" id="sg-materiales"><span class="eyebrow">MATERIALES</span><h2 class="module-title">Componentes necesarios</h2><div class="materials" id="materiales-seguidor"></div></article>
+<article class="module" id="sg-ensamble"><span class="eyebrow">ENSAMBLAJE</span><h2 class="module-title">Construcción paso a paso</h2><ol class="steps"><li>Monta motores, ruedas y apoyo delantero.</li><li>Coloca los sensores al frente, paralelos al suelo.</li><li>Mantén igual altura y separación entre sensores.</li><li>Fija Arduino, L298 y batería.</li><li>Conecta el circuito con la batería apagada.</li><li>Calibra cada sensor sobre blanco y negro.</li></ol></article>
+<article class="module" id="sg-conexiones"><span class="eyebrow">CONEXIONES</span><h2 class="module-title">Plan eléctrico</h2><div class="table-wrap"><table class="wiring"><tr><th>Componente</th><th>Terminal</th><th>Arduino / controlador</th></tr><tr><td>Sensor derecho</td><td>OUT</td><td>A0</td></tr><tr><td>Sensor central</td><td>OUT</td><td>A1</td></tr><tr><td>Sensor izquierdo</td><td>OUT</td><td>A2</td></tr><tr><td>Motor izquierdo</td><td>Control A / B</td><td>D6 / D9 (PWM)</td></tr><tr><td>Motor derecho</td><td>Control A / B</td><td>D10 / D11 (PWM)</td></tr><tr><td>Todos</td><td>GND</td><td>Tierra común</td></tr></table></div><p class="note">La lectura puede invertirse según el módulo y el color de la pista; compruébala antes de integrar los motores.</p></article>
+<article class="module" id="sg-programacion"><span class="eyebrow">PROGRAMACIÓN</span><h2 class="module-title">Código Arduino completo</h2><pre><code>// ROBOT SEGUIDOR DE LÍNEA - ARDUINO NANO
+// 3 SENSORES TCRT5000
+// Derecho A0, medio A1, izquierdo A2
+// Motor izquierdo D6 y D9
+// Motor derecho D10 y D11
+
+const byte SENSOR_DER = A0;
+const byte SENSOR_MED = A1;
+const byte SENSOR_IZQ = A2;
+
+const byte MI_A = 6;
+const byte MI_B = 9;
+const byte MD_A = 10;
+const byte MD_B = 11;
+
+int velocidadRecta = 90;
+int velocidadRapida = 130;
+int velocidadLenta = 20;
+int velocidadGiro = 120;
+
+// LOW = línea negra. Si funciona al revés, usa HIGH.
+const byte LINEA = LOW;
+
+void setup() {
+  pinMode(SENSOR_DER, INPUT);
+  pinMode(SENSOR_MED, INPUT);
+  pinMode(SENSOR_IZQ, INPUT);
+  pinMode(MI_A, OUTPUT);
+  pinMode(MI_B, OUTPUT);
+  pinMode(MD_A, OUTPUT);
+  pinMode(MD_B, OUTPUT);
+  detener();
+  delay(1000);
+}
+
+void loop() {
+  bool izq = (digitalRead(SENSOR_IZQ) == LINEA);
+  bool med = (digitalRead(SENSOR_MED) == LINEA);
+  bool der = (digitalRead(SENSOR_DER) == LINEA);
+
+  // 010: línea perfectamente al centro
+  if (!izq &amp;&amp; med &amp;&amp; !der) {
+    motores(velocidadRecta, velocidadRecta);
+  }
+  // 110: corregir rápidamente hacia la derecha
+  else if (izq &amp;&amp; med &amp;&amp; !der) {
+    motores(velocidadRapida, velocidadLenta);
+  }
+  // 100: giro fuerte hacia la derecha
+  else if (izq &amp;&amp; !med &amp;&amp; !der) {
+    motores(velocidadGiro, 20);
+  }
+  // 011: corregir rápidamente hacia la izquierda
+  else if (!izq &amp;&amp; med &amp;&amp; der) {
+    motores(velocidadLenta, velocidadRapida);
+  }
+  // 001: giro fuerte hacia la izquierda
+  else if (!izq &amp;&amp; !med &amp;&amp; der) {
+    motores(20, velocidadGiro);
+  }
+  // 111: cruce o línea gruesa
+  else if (izq &amp;&amp; med &amp;&amp; der) {
+    motores(velocidadRecta, velocidadRecta);
+  }
+  // 101: sensores laterales detectan la línea
+  else if (izq &amp;&amp; !med &amp;&amp; der) {
+    motores(velocidadRecta, velocidadRecta);
+  }
+  // 000: perdió la línea
+  else {
+    detener();
+  }
+
+  delay(1);
+}
+
+// Positivo = adelante. Negativo = atrás.
+void motores(int izquierdo, int derecho) {
+  if (izquierdo &gt; 0) {
+    analogWrite(MI_A, izquierdo);
+    analogWrite(MI_B, 0);
+  } else if (izquierdo &lt; 0) {
+    analogWrite(MI_A, 0);
+    analogWrite(MI_B, -izquierdo);
+  } else {
+    analogWrite(MI_A, 0);
+    analogWrite(MI_B, 0);
+  }
+
+  if (derecho &gt; 0) {
+    analogWrite(MD_A, derecho);
+    analogWrite(MD_B, 0);
+  } else if (derecho &lt; 0) {
+    analogWrite(MD_A, 0);
+    analogWrite(MD_B, -derecho);
+  } else {
+    analogWrite(MD_A, 0);
+    analogWrite(MD_B, 0);
+  }
+}
+
+void detener() {
+  motores(0, 0);
+}</code></pre></article>
+<article class="module" id="sg-videos"><span class="eyebrow">VIDEOS</span><h2 class="module-title">Curso en video</h2>
+  <div class="video-box">
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/R3VhQpFqDeA?si=cPmN3n75x0PbERVg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+</article>
+  
+  <p class="note">Agrega tu archivo con la ruta: <code>videos/robot-seguidor-linea.mp4</code></p></article>
+<article class="module" id="sg-prueba"><span class="eyebrow">PRUEBA FINAL</span><h2 class="module-title">Evaluación y errores frecuentes</h2><ol class="steps"><li>Lee cada sensor por separado en el monitor serial.</li><li>Prueba los motores con el robot elevado.</li><li>Ensaya primero sobre una pista recta.</li><li>Agrega curvas y ajusta velocidad, altura y sensibilidad.</li></ol><div class="faq"><details><summary>No distingue la línea</summary><p>Ajusta altura, potenciómetros, iluminación y contraste de la pista.</p></details><details><summary>Se sale en las curvas</summary><p>Reduce velocidad, aumenta la corrección o cambia la separación de los sensores.</p></details><details><summary>Corrige hacia el lado equivocado</summary><p>Intercambia la lógica izquierda/derecha o verifica la orientación de motores.</p></details></div></article></section>
+</main><footer><span>© 2026 Carmen Guzmán de Mier 1</span><span>Robótica · Creatividad · Tecnología</span></footer>
+<script>
+const comunes=[['arduino-nano.png','Arduino Nano','1 unidad'],['controlador-l298.png','Controlador L298','1 unidad'],['motor-reductor.png','Motor reductor 50 RPM','2 unidades'],['bateria-lipo.png','Batería LiPo','1 unidad'],['chasis-mdf.png','Chasis MDF','1 unidad'],['rueda-loca.png','Rueda loca','1 unidad'],['placa-pcb.png','Placa PCB','1 unidad'],['pin-header.png','Pin header','2 unidades'],['interruptor.png','Interruptor','1 unidad']];
+const materialesEvasor=[...comunes,['sensor-ultrasonico.png','Sensor HC-SR04','1 unidad'],['servomotor.png','Servomotor','1 unidad']];
+const materialesSeguidor=[...comunes,['sensor-linea.png','Sensor TCRT5000','3 unidades']];
+const tarjetaMaterial=m=>`<article class="material"><img src="${m[0]}" alt="${m[1]}"><small>${m[2]}</small><h3>${m[1]}</h3></article>`;
+document.querySelector('#materiales-evasor').innerHTML=materialesEvasor.map(tarjetaMaterial).join('');
+document.querySelector('#materiales-seguidor').innerHTML=materialesSeguidor.map(tarjetaMaterial).join('');
+const screens=[...document.querySelectorAll('.screen')];
+function showScreen(id,push=true){const target=document.getElementById(id)||document.getElementById('inicio');screens.forEach(s=>s.classList.toggle('active',s===target));document.querySelectorAll('.nav-btn').forEach(b=>b.classList.toggle('active',b.dataset.screen===target.id));if(push)history.pushState({screen:target.id},'',`#${target.id}`);scrollTo({top:0,behavior:'instant'});}
+document.addEventListener('click',e=>{const screen=e.target.closest('[data-screen]');if(screen){showScreen(screen.dataset.screen);return}const go=e.target.closest('[data-go]');if(go)document.getElementById(go.dataset.go)?.scrollIntoView({behavior:'smooth'});});
+addEventListener('popstate',()=>showScreen(location.hash.slice(1)||'inicio',false));showScreen(location.hash.slice(1)||'inicio',false);
+</script></body></html>
